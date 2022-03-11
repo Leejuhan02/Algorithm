@@ -62,3 +62,4 @@ random= str(randrange(0,10))
 print(random)
 stripnum= str(rannum.strip(random))
 print(stripnum)
+# 커밋 실험
