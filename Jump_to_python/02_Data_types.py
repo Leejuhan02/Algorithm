@@ -136,3 +136,65 @@ print(quiz.get('sex', 'male'))
 print("="*50)
 
 # set Data type
+s1= set([1,2,3])
+print(s1)
+
+s2= set(["hello"])
+print(s2)
+
+s3= set("hello") # 괄호 하나에 싸여있는 문자열의 경우, 개별 구성요소를 순서없이 나열한다. 이때, 중복을 허용하지 않는다. 
+print(s3)
+
+l1= list(s3)
+l1.sort()
+print(l1)
+print(l1[0])
+
+t1= tuple(s3) # s3에서 임의의 순서로 정의된 것을 따라 tuple화 한다. 
+print(t1)
+print(t1[0])
+
+s4=set([1,2,3,4,5,6])
+s5=set([4,5,6,7,8,9])
+intsec= s4&s5 # 두 set 사이의 교집합을 구한다. 
+print(intsec)
+
+intsec2= s4.intersection(s5) # 이것으로도 교집합을 구할 수 있다. 
+print(intsec2)
+
+uni= s4 | s5 # 합집합을 구하는 공식이다. shift + \ 이다. 
+print(uni)
+
+uni2= s4.union(s5)
+print(uni2)
+
+dif= s4-s5
+print(dif)
+
+dif2= s5-s4
+print(dif2)
+
+dif3= s4.difference(s5)
+print(dif3)
+
+s4.add(7)
+print(s4)
+
+s5.update([7,8,9,10,11])
+print(s5)
+
+s5.remove(11)
+print(s5)
+
+print("="*50)
+
+# bool Data type
+# True False 를 나타내는 자료형.
+
+bo1= True
+bo2= False
+
+type(bo1)
+type(bo2)
+
+# 보류
