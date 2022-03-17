@@ -198,3 +198,13 @@ type(bo1)
 type(bo2)
 
 # 보류
+
+copy1= [1,2,3]
+copy2=copy1
+print(copy1 is copy2)
+
+from copy import copy
+
+copy3= copy(copy1)
+print(copy3 is copy1) # copy 를 이용한 복사는 같은 일련번호를 공유하지 않는다. 
+
